@@ -11,9 +11,32 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func login(_ sender: Any) {
+        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
+            
+            print("Acabei de logar")
+        })
+    }
+    
+    @IBAction func cadastro(_ sender: Any) {
+        FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, eroor) in
+            
+            print("usuario criado")
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FIRAuth.auth()?.addStateDidChangeListener({ (auth, user) in
+            if user != nil {
+                self.performSegue(withIdentifier: "GroupToDoList", sender: nil)
+            }
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 
