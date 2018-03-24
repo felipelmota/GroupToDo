@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55DFC8A32066C420005BCAE2 /* GroupToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DFC8A22066C420005BCAE2 /* GroupToDoTableViewController.swift */; };
+		55DFC8A52066CA29005BCAE2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DFC8A42066CA29005BCAE2 /* Item.swift */; };
 		67E77ADB3E404243101FD530 /* Pods_MyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB27C402B26A2B29EB5476 /* Pods_MyBase.framework */; };
 		71308D071DF9A8270001DF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71308D061DF9A8270001DF97 /* AppDelegate.swift */; };
 		71308D091DF9A8270001DF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71308D081DF9A8270001DF97 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		11EB27C402B26A2B29EB5476 /* Pods_MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4420D97D03CBCD9653106DA0 /* Pods-MyBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyBase/Pods-MyBase.release.xcconfig"; sourceTree = "<group>"; };
 		55DFC8A22066C420005BCAE2 /* GroupToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupToDoTableViewController.swift; sourceTree = "<group>"; };
+		55DFC8A42066CA29005BCAE2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		68B33E47867DDD985A84FA4E /* Pods-MyBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBase/Pods-MyBase.debug.xcconfig"; sourceTree = "<group>"; };
 		71308D031DF9A8270001DF97 /* MyBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71308D061DF9A8270001DF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				71308D081DF9A8270001DF97 /* ViewController.swift */,
 				71308D0A1DF9A8270001DF97 /* Main.storyboard */,
 				55DFC8A22066C420005BCAE2 /* GroupToDoTableViewController.swift */,
+				55DFC8A42066CA29005BCAE2 /* Item.swift */,
 				71308D0D1DF9A8270001DF97 /* Assets.xcassets */,
 				71308D0F1DF9A8270001DF97 /* LaunchScreen.storyboard */,
 				9B00E5802065AC20009A8A7D /* GoogleService-Info.plist */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DFC8A52066CA29005BCAE2 /* Item.swift in Sources */,
 				71308D091DF9A8270001DF97 /* ViewController.swift in Sources */,
 				55DFC8A32066C420005BCAE2 /* GroupToDoTableViewController.swift in Sources */,
 				71308D071DF9A8270001DF97 /* AppDelegate.swift in Sources */,

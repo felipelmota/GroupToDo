@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="-207.19999999999999" y="35.532233883058474"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Group To Do-->
         <scene sceneID="glG-PF-kV8">
             <objects>
                 <tableViewController id="qta-EK-QM1" customClass="GroupToDoTableViewController" customModule="MyBase" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XaZ-nA-DVd" detailTextLabel="8yv-Kw-OXl" style="IBUITableViewCellStyleSubtitle" id="sEO-ve-XXu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" textLabel="XaZ-nA-DVd" detailTextLabel="8yv-Kw-OXl" style="IBUITableViewCellStyleSubtitle" id="sEO-ve-XXu">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sEO-ve-XXu" id="a6E-OX-XY6">
@@ -118,10 +118,17 @@
                             <outlet property="delegate" destination="qta-EK-QM1" id="nB1-8R-MUi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Hbs-hE-oIg">
+                    <navigationItem key="navigationItem" title="Group To Do" id="Hbs-hE-oIg">
                         <barButtonItem key="leftBarButtonItem" title="Saie" id="bWo-kI-uPq">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="sair:" destination="qta-EK-QM1" id="Qzm-7p-8Ck"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7MZ-fq-6oc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addTask:" destination="qta-EK-QM1" id="FhJ-6p-yax"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -137,6 +144,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yPS-Z6-3j6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.058558426800000001" green="0.35689473150000001" blue="0.64305490259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="qta-EK-QM1" kind="relationship" relationship="rootViewController" id="tv9-i2-mxX"/>
